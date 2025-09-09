@@ -37,6 +37,17 @@ Cada clínica conta com módulos próprios, mas todos estão integrados em uma m
 
 ---
 
+## 🎨 Protótipo do Front-end
+
+Acesse o protótipo visual no Figma:  
+[👉 Clique aqui para visualizar o design no Figma](https://www.figma.com/design/3DF8cNZOYbXLpdNQUweQew/Front-End-para-Clinicas-Uninassau?node-id=0-1&p=f&t=1epVoQQTUeXhAuZ3-0)
+
+<div style="display: inline_block"  align="center">
+  <img align="center" alt="TypeScript" src="./src/assets/Imagem do WhatsApp de 2025-09-05 à(s) 16.44.31_31b4e255.jpg">
+</div>
+
+---
+
 ## Tecnologias e Ferramentas Utilizadas 
 
 Foi utilizado no projeto varias tecnologias para o desenvolvimento das interfaces.
