@@ -1,0 +1,7 @@
+version: '3.8'
+services:
+  web:
+    image: uniclinicasuninassau:1.0
+    ports:
+      - "80:80"
+    restart: always
