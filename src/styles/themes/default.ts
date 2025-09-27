@@ -1,5 +1,5 @@
 export const defaultTheme = {
-    cores:{ 
+    cores: { 
         White: "#FFFFFF",       
         Black: "#000000", 
         Yellow:"#E8C628" ,       //Amarelo Padrão
@@ -13,7 +13,7 @@ export const defaultTheme = {
     },
 
 
-    fonts:{
+    fonts: {
         inter: " 'Inter', sans-serif ", // Utilizado em Titulos, e completamente nas telas Inicial e de Configuração
         jura: " 'Jura', sans-serif  ", //Utilizado no preenchimento de informações do usuario, Ex: Ficha de cadastro
         poppins: " 'Poppins ', sans-serif ", //Usado completamente na Tela de erro, Tela de Relatorio e Financeiro

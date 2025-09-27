@@ -1,4 +1,4 @@
-import { DivConteiner, IconesSuperiores, IconesInferiores, TextLine, DivInterna, Input, LabelInput, Button, DivIcones, DivGeral, Background, LinkCadastro } from "./style";
+import { DivConteiner, IconesSuperiores, IconesInferiores, TextLine, DivInterna, Input, LabelInput, Button, DivIcones, DivGeral, Background, Link } from "./style";
 
 export default function FormularioLogin(){
     return(
@@ -15,6 +15,7 @@ export default function FormularioLogin(){
 
                     <LabelInput htmlFor="senha">Senha</LabelInput>
                     <Input type="password" id="senha" placeholder="Senha"/>
+                    <Link esqueceuSenha>Esqueceu a senha?</Link>
 
                     <Button>Entrar</Button>
 
@@ -29,7 +30,7 @@ export default function FormularioLogin(){
                     </DivIcones>
 
                     <TextLine textoAlternativo>
-                        Não tem uma conta? <LinkCadastro>Crie uma agora mesmo</LinkCadastro>
+                        Não tem uma conta? <Link>Crie uma agora mesmo</Link>
                     </TextLine>
 
                 </DivInterna>

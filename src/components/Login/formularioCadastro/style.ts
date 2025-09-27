@@ -21,19 +21,20 @@ export const DivConteiner = styled.div`
     width: 562px;
     height: 100vh;
     max-width: 100%;
-    background-color: ${props => props.theme.yellow};
+    background-color: ${props => props.theme.cores.Yellow};
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     border-right: 3px solid black;
     box-sizing: border-box;
+    overflow: auto;
 `
 
 export const IconesSuperiores = styled.img`
     width: 35%;
     height: auto;
-    margin: 46px 0 35px 0;
+    margin-bottom: 35px;
 `
 
 export const IconesInferiores= styled.img`
@@ -58,10 +59,10 @@ export const DivIcones = styled.div`
 export const Input = styled.input`
     width: 358px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 8px;
     box-sizing: border-box;
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: ${props => props.theme.fonts.jura};
     padding-left: 10px;
     box-shadow: 1px 4px 3px rgba(0, 0, 0, 0.1);
     border: none;
@@ -72,24 +73,23 @@ export const Input = styled.input`
 `
 
 export const LabelInput = styled.label`
-    font-family: 'Times New Roman', Times, serif;
+    font-family: ${props => props.theme.fonts.jura};
     font-size: 18px;
     font-weight: 700;
     margin-top: 18px;
-    padding: 2px 0 0 7px;
-    color: black;
+    padding: 3px 0 0 20px;
+    color: ${props => props.theme.cores.Black};
     align-self: flex-start;
 `
 
 export const TextLine = styled.p<TextLineProps>`
-    font-family: 'Times New Roman', Times, serif;
+    font-family: ${props => props.theme.fonts.poppins};
     font-size: ${props => props.textoAlternativo ? '15px' : '20px'};
     font-weight: 700;
-    font-style: italic;
     text-align: center;
 
     ${props => props.textoAlternativo && css`
-    color: #333;
+    color: ${props => props.theme.cores.Black};
     text-transform: uppercase;
     line-height: 1.1;
     margin: 30px 0 10px 0;
@@ -99,12 +99,12 @@ export const TextLine = styled.p<TextLineProps>`
 export const Button = styled.button`
     width: 180px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 11px;
     border: none;
-    background-color: blue;
-    color: white;
+    background-color: ${props => props.theme.cores.Backbuttom};
+    color: ${props => props.theme.cores.White};
     font-size: 15px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: ${props => props.theme.fonts.jura};
     font-weight: 700;
     margin-top: 24px;
     cursor: pointer;
