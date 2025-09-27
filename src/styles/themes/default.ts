@@ -10,8 +10,8 @@ export const defaultTheme = {
         Backbuttom: "#1E3463", // Fundo dos Botões
         Red:"#B11E0A", // Utilzado nos detalhes 
         Greenflorence: "#23CC37", // Utilizado nos detalhes
-
     },
+
 
     fonts:{
         inter: " 'Inter', sans-serif ", // Utilizado em Titulos, e completamente nas telas Inicial e de Configuração
