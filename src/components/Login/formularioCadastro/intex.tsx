@@ -26,7 +26,7 @@ export default function FormularioCadastro(){
                     <Input type="password" id="senha" placeholder="Senha"/>
 
                     <LabelInput htmlFor="confirmarSenha">Confirme sua senha</LabelInput>
-                    <Input type="password" id="confirmarSenha" placeholder="Confirmar   senha"/>
+                    <Input type="password" id="confirmarSenha" placeholder="Confirmar senha"/>
 
                     <Button>Criar Conta</Button>
 
