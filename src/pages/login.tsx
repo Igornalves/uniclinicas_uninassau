@@ -1,7 +1,7 @@
-import Retangulo from "../components/Login/retangulo/intex";
+import FormularioLogin from "../components/Login/formularioLogin/intex";
 
 export default function Login(){
     return (
-        <Retangulo/>
+        <FormularioLogin/>
     )
 }
