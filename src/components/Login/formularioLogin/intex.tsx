@@ -35,7 +35,7 @@ export default function FormularioLogin(){
 
                 </DivInterna>
             </DivConteiner>
-            <Background src="/public/assets/cosulta.jpg" alt="Background"/>
+            <Background src="/assets/cosulta.jpg" alt="Background"/>
         </DivGeral>
     )
 }
