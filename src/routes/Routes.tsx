@@ -2,6 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../pages/home";
 import Login from "../pages/login";
 import Cadastro from "../pages/cadastro";
+import EsqueceuSenha from "../pages/esqueceuSenha";
 
 export default function Router(){
     return (
@@ -9,6 +10,7 @@ export default function Router(){
             <Route path="/" Component={Home}/>
             <Route path="/login" Component={Login}/>
             <Route path="/cadastro" Component={Cadastro}/>
+            <Route path="/esqueceu-senha" Component={EsqueceuSenha}/>
         </Routes>
     )
 }

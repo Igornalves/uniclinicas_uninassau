@@ -10,10 +10,10 @@ export default function FormularioLogin(){
                         Entrar na conta
                     </TextLine>
 
-                    <LabelInput htmlFor="email">Digite o seu email</LabelInput>
+                    <LabelInput htmlFor="email">Digite o seu Email</LabelInput>
                     <Input type="email" id="email" placeholder="Email"/>
 
-                    <LabelInput htmlFor="senha">Senha</LabelInput>
+                    <LabelInput htmlFor="senha">Digite o seu Senha</LabelInput>
                     <Input type="password" id="senha" placeholder="Senha"/>
                     <Link esqueceuSenha>Esqueceu a senha?</Link>
 
@@ -30,7 +30,7 @@ export default function FormularioLogin(){
                     </DivIcones>
 
                     <TextLine textoAlternativo>
-                        Não tem uma conta? <Link>Crie uma agora mesmo</Link>
+                        Não tem uma conta? <Link href="/cadastro">Crie uma agora mesmo</Link>
                     </TextLine>
 
                 </DivInterna>

@@ -38,6 +38,7 @@ export const IconesSuperiores = styled.img`
     width: 50%;
     height: auto;
     margin: 46px 0 35px 0;
+    margin-top: 70px;
 `
 
 export const IconesInferiores= styled.img`
@@ -51,6 +52,7 @@ export const DivInterna = styled.div`
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
+    margin-bottom:50px;
 `
 
 export const DivIcones = styled.div`
@@ -80,6 +82,7 @@ export const LabelInput = styled.label`
     font-size: 18px;
     font-weight: 700;
     margin-top: 18px;
+    margin-bottom: 10px;
     padding: 3px 0 0 7px;
     color: ${props => props.theme.cores.Black};
     align-self: flex-start;
@@ -131,7 +134,7 @@ export const Link = styled.a<LinkProps>`
 
     ${props => props.esqueceuSenha && css`
         align-self: flex-end;
-        margin: 5px 0 0 0;
+        margin: 10px 0 0 0;
         font-size: 14px;
     `}
 

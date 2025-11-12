@@ -29,12 +29,17 @@ export const DivConteiner = styled.div`
     border-right: 3px solid black;
     box-sizing: border-box;
     overflow: auto;
+
+    &::-webkit-scrollbar {     /* Chrome, Edge e Safari */
+    display: none;
+    }
 `
 
 export const IconesSuperiores = styled.img`
     width: 35%;
     height: auto;
     margin-bottom: 35px;
+    margin-top: 195px;
 `
 
 export const IconesInferiores= styled.img`
@@ -54,6 +59,7 @@ export const DivIcones = styled.div`
     display: flex;
     justify-content: center;
     gap: 20px;
+    margin-bottom: 35px;
 `
 
 export const Input = styled.input`
