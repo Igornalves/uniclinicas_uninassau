@@ -1,6 +1,6 @@
 import { DivConteiner, IconesSuperiores, IconesInferiores, TextLine, DivInterna, Input, LabelInput, Button, DivIcones, DivGeral, Background, Link } from "./style";
 
-export default function FormularioLogin(){
+export default function FormularioLoginComponentes(){
     return(
         <DivGeral>
             <DivConteiner>
@@ -15,7 +15,7 @@ export default function FormularioLogin(){
 
                     <LabelInput htmlFor="senha">Digite o seu Senha</LabelInput>
                     <Input type="password" id="senha" placeholder="Senha"/>
-                    <Link esqueceuSenha>Esqueceu a senha?</Link>
+                    <Link esqueceuSenha href="/esqueceu-senha">Esqueceu a senha?</Link>
 
                     <Button>Entrar</Button>
 

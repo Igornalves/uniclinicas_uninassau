@@ -7,9 +7,15 @@ export const defaultTheme = {
         Background: "#CBCBD3", // Cinza usado no Fundo geral de todas as telas
         Subgrey:"#D9D9D9", // Fundo das caixinhas de informações
         Darkgrey:"#9A9A9A", // Cinza usado no contraste da tela de Erro
-        Backbuttom: "#1E3463", // Fundo dos Botões
+        Backbuttom: "#1E3463",// Fundo dos Botões
+        IceGray: "#E9EBEB", 
         Red:"#B11E0A", // Utilzado nos detalhes 
-        Greenflorence: "#23CC37", // Utilizado nos detalhes
+        Greenflorence: "#23CC37",
+        DarkBlue: "#253464",// Utilizado nos detalhes
+        MediumGray: "#72767A",
+        DarkSlateBlue: "#334155",
+        DarkNavyBlue: "#253464",
+        BrightBlue: "#2282DA",
     },
 
 

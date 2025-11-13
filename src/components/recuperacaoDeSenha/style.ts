@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const DivConteinerGeral = styled.div`
     width: 100vw;
@@ -9,7 +9,7 @@ export const DivConteinerGeral = styled.div`
     justify-content: center;
 `
 
-export const DivSecundariaConteudo = styled.div`
+export const DivConteinerSecundario = styled.div`
     width: 750px;
     height: 600px;
     background-color: ${props => props.theme.cores.IceGray};
@@ -38,4 +38,8 @@ export const Txt2 = styled.text`
     font-size: 20px;
     color: ${props => props.theme.cores.MediumGray};
     margin-bottom: 42px;
+`
+
+export const Txt3 = styled.text`
+    margin-top: 36px;
 `

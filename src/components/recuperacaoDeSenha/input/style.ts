@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const DivConteiner = styled.div`
     display: flex;
     flex-direction: column;   
+    /* margin-top: 36px; */
 `
 
 export const Texto = styled.text`
@@ -11,6 +12,7 @@ export const Texto = styled.text`
     font-size: 16px;
     color: ${props => props.theme.cores.DarkSlateBlue};
     margin-bottom: 10px;
+    /* margin-top: 36px; */
     padding-left: 5px;
 `
 

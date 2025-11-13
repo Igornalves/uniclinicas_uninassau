@@ -1,6 +1,6 @@
 import { DivConteiner, IconesSuperiores, IconesInferiores, TextLine, DivInterna, Input, LabelInput, Button, DivIcones, DivGeral, Background } from "./style";
 
-export default function FormularioCadastro(){
+export default function FormularioCadastroComponente(){
     return(
         <DivGeral>
             <DivConteiner>

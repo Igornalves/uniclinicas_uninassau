@@ -1,14 +1,18 @@
 import { DivConteiner, InputText, Texto } from "./style";
 
-export function Input(){
+interface types  {
+    textos: string
+}
+
+export function Input({ textos }:types){
     return(
         <DivConteiner>
             <Texto>
-                Seu endereço de email:
+                {textos}
             </Texto>
             <InputText 
                 type="text"
-                placeholder="seuemail@gmail.com"
+                placeholder="••••••••••"
             />
         </DivConteiner>
     );
