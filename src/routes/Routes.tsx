@@ -5,6 +5,7 @@ import Cadastro from "../pages/cadastro";
 import EsqueceuSenha from "../pages/esqueceuSenha";
 import RecuperacaoDeSenha from "../pages/recuperacaoDeSenha";
 import SelecaoDeClinicas from "../pages/seleçaoDeClinicas";
+import InicioOdontologia from "../pages/odontologia/inicioOdontologia";
 
 export default function Router(){
     return (
@@ -15,6 +16,7 @@ export default function Router(){
             <Route path="/esqueceu-senha" Component={EsqueceuSenha}/>
             <Route path="/recuperacao-de-senha" Component={RecuperacaoDeSenha}/>
             <Route path="/selecao-clinica" Component={SelecaoDeClinicas}/>
+            <Route path="/odontologia/tela-inicio" Component={InicioOdontologia}/>
         </Routes>
     )
 }
