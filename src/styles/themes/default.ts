@@ -12,6 +12,7 @@ export const defaultTheme = {
         Red:"#B11E0A", // Utilzado nos detalhes 
         Greenflorence: "#23CC37",
         DarkBlue: "#253464",// Utilizado nos detalhes
+        OceanNavy: "#213366",
         MediumGray: "#72767A",
         DarkSlateBlue: "#334155",
         DarkNavyBlue: "#253464",
