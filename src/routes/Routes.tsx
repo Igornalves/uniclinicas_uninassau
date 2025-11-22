@@ -10,7 +10,7 @@ import InicioOdontologia from "../pages/odontologia/inicioOdontologia";
 export default function Router(){
     return (
         <Routes>
-            <Route path="/" Component={Home}/>
+            <Route path="/" element={<Home url="https://igornalves.github.io/LadingPage_Projeto-Uniclinicas/"/>}/>
             <Route path="/login" Component={Login}/>
             <Route path="/cadastro" Component={Cadastro}/>
             <Route path="/esqueceu-senha" Component={EsqueceuSenha}/>

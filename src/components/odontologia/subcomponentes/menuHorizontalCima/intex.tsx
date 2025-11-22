@@ -3,8 +3,12 @@ import img1 from "../../../../assets/images/iconMedicinaVeterinaria.png"
 import img2 from "../../../../assets/Icon Perfil.png"
 import img3 from "../../../../assets/image 24.png"
 import img4 from "../../../../assets/images/438855310_1616687672427610_5315768813804236953_n-removebg-preview 2.png"
+import { useNavigate } from "react-router-dom";
 
 export default function MenuHorizontalCima() {
+
+    const navigate = useNavigate();
+
     return(
         <DivConteinerPrincipal>
             <ImagemIcon src={img1} /> 
@@ -14,7 +18,7 @@ export default function MenuHorizontalCima() {
                 Clinica: Medicina Veterinaria
             </TextoTituloDoSistemaClinica>
 
-            <LinkButton>
+            <LinkButton onClick={() => navigate("/login")}>
                 <TextLink>Entrar</TextLink>
             </LinkButton>
 
