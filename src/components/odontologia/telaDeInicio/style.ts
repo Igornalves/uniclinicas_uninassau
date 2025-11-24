@@ -35,7 +35,22 @@ export const ButaoAtendimento = styled.button`
     border-radius: 10px;
     font-weight: 500;
     margin-left: 26px;
-    margin-top: 38px;
+    margin-top: 30px;
+
+    &:hover {
+        color: white;
+        background-color: ${props => props.theme.cores.MediumGray};
+    }
+`
+
+export const DivConteinerGraficos = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 39px;
+    margin-right: 19px;
+    margin-top: 58px;
+    margin-bottom: 60px;
 `
 
 export const DivButaoIcons = styled.div`

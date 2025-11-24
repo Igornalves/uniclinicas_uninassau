@@ -21,11 +21,15 @@ export const DivButaoPagina = styled.div`
 `;
 
 
-export const IconButton = styled.img`
-    width: clamp(20px, 4vw, 40px);
-    height: auto;
-    margin-right: 0.7vw;
+export const IconButton = styled.div`
+    font-size: 22px;
+    color: ${props => props.theme.cores.Black};
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 `;
+
 
 
 export const Butao = styled.button<{ active?: boolean }>`

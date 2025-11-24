@@ -27,7 +27,7 @@ interface ButaoProps {
 }
 
 export const ButaoDeSelecao = styled.button<ButaoProps>`
-    background-color: ${props => props.ativo ? props.theme.cores.Red : props.theme.cores.White};
+    background-color: ${props => props.ativo ? props.theme.cores.Greenflorence : props.theme.cores.White};
     width: 373px;
     height: 486px;
     border-radius: 20px;
@@ -35,7 +35,7 @@ export const ButaoDeSelecao = styled.button<ButaoProps>`
     margin-right: 34px;
     
     &:hover {
-        background-color: ${props => props.ativo ? props.theme.cores.Red : props.theme.cores.IceGray};
+        background-color: ${props => props.ativo ? props.theme.cores.Greenflorence : props.theme.cores.IceGray};
     }
 `
 

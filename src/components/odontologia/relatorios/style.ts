@@ -1,0 +1,27 @@
+import styled from "styled-components";
+
+export const DivConteinerSegundario = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 35px;
+`
+
+export const DivConteinerTerceiro = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 60px;
+    margin-bottom: 20px;
+`
+
+export const DivConteinerQuarta = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 35px;
+    /* margin-top: 35px; */
+    margin-bottom: 40px;
+`

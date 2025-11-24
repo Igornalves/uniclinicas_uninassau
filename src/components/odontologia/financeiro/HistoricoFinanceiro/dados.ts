@@ -1,0 +1,17 @@
+export const eventos = [
+  { texto: "Recebimento – Consulta de Ana Paula", data: "10/02/2025" },
+  { texto: "Pagamento – Laboratório Vida", data: "09/02/2025" },
+  { texto: "Recebimento – Procedimento João Pedro", data: "08/02/2025" },
+  { texto: "Recebimento – Limpeza de Carlos Santos", data: "07/02/2025" },
+  { texto: "Pagamento – Compra de Materiais OdontoMix", data: "06/02/2025" },
+  { texto: "Recebimento – Avaliação de Mariana Oliveira", data: "05/02/2025" },
+  { texto: "Pagamento – Fornecedor DentalSupreme", data: "04/02/2025" },
+  { texto: "Recebimento – Tratamento de Fernanda Costa", data: "03/02/2025" },
+  { texto: "Pagamento – Clínica Sorriso&Vida", data: "02/02/2025" },
+  { texto: "Recebimento – Revisão de Gabriel Martins", data: "01/02/2025" },
+  { texto: "Recebimento – Procedimento de Bruno Carvalho", data: "28/01/2025" },
+  { texto: "Pagamento – Laboratório Central", data: "27/01/2025" },
+  { texto: "Recebimento – Consulta de Letícia Andrade", data: "25/01/2025" },
+  { texto: "Pagamento – Compra DentalPrime", data: "23/01/2025" },
+  { texto: "Recebimento – Tratamento de Camila Torres", data: "20/01/2025" },
+];

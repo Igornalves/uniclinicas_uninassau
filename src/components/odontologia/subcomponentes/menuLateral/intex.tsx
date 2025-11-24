@@ -1,5 +1,20 @@
-import { useState } from "react";
-import { Butao, DivButaoPagina, DivConteinerMenuLateral, IconButton, Textobutao } from "./style";
+import { useLocation, useNavigate } from "react-router-dom";
+import { 
+    FaHome, 
+    FaUser, 
+    FaCalendarAlt, 
+    FaClipboardList, 
+    FaChartBar, 
+    FaCog 
+} from "react-icons/fa";
+
+import { 
+    Butao, 
+    DivButaoPagina, 
+    DivConteinerMenuLateral, 
+    IconButton, 
+    Textobutao 
+} from "./style";
 
 interface PropsMenu {
     text1: string,
@@ -8,68 +23,85 @@ interface PropsMenu {
     text4: string,
     text5: string,
     text6: string,
-    imagem1: string,
-    imagem2: string,
-    imagem3: string,
-    imagem4: string,
-    imagem5: string,
-    imagem6: string,
 }
 
-export default function MenuLateral(props:PropsMenu) {
+export default function MenuLateral(props: PropsMenu) {
 
-    const [ativo, setAtivo] = useState<number | null>(null);
+    const navigate = useNavigate();
+    const location = useLocation();
 
-    return(
+    // Verifica a rota ativa
+    const rota = location.pathname;
+
+    return (
         <DivConteinerMenuLateral>
-            <DivButaoPagina>
-                <IconButton src={props.imagem1}/> 
-                <Butao active={ativo === 1} onClick={() => setAtivo(1)}>
-                    <Textobutao active={ativo === 1}>
+
+            <DivButaoPagina onClick={() => navigate("/odontologia/tela-inicio")}>
+                <IconButton>
+                    <FaHome size={35} />
+                </IconButton>
+                <Butao active={rota === "/odontologia/tela-inicio"}>
+                    <Textobutao active={rota === "/odontologia/tela-inicio"}>
                         {props.text1}
                     </Textobutao>
                 </Butao>
             </DivButaoPagina>
-            <DivButaoPagina>
-                <IconButton src={props.imagem2}/> 
-                <Butao active={ativo === 2} onClick={() => setAtivo(2)}>
-                    <Textobutao active={ativo === 2}>
+
+            <DivButaoPagina onClick={() => navigate("/odontologia/paciente")}>
+                <IconButton>
+                    <FaUser size={35} />
+                </IconButton>
+                <Butao active={rota === "/odontologia/paciente"}>
+                    <Textobutao active={rota === "/odontologia/paciente"}>
                         {props.text2}
                     </Textobutao>
                 </Butao>
             </DivButaoPagina>
-            <DivButaoPagina>
-                <IconButton src={props.imagem3}/> 
-                <Butao active={ativo === 3} onClick={() => setAtivo(3)}>
-                    <Textobutao active={ativo === 3}>
+
+            <DivButaoPagina onClick={() => navigate("/odontologia/agenda")}>
+                <IconButton>
+                    <FaCalendarAlt size={35} />
+                </IconButton>
+                <Butao active={rota === "/odontologia/agenda"}>
+                    <Textobutao active={rota === "/odontologia/agenda"}>
                         {props.text3}
                     </Textobutao>
                 </Butao>
             </DivButaoPagina>
-            <DivButaoPagina>
-                <IconButton src={props.imagem4}/> 
-                <Butao active={ativo === 4} onClick={() => setAtivo(4)}>
-                    <Textobutao active={ativo === 4}>
+
+            <DivButaoPagina onClick={() => navigate("/odontologia/relatorios")}>
+                <IconButton>
+                    <FaClipboardList size={35} />
+                </IconButton>
+                <Butao active={rota === "/odontologia/relatorios"}>
+                    <Textobutao active={rota === "/odontologia/relatorios"}>
                         {props.text4}
                     </Textobutao>
                 </Butao>
             </DivButaoPagina>
-            <DivButaoPagina>
-                <IconButton src={props.imagem5}/> 
-                <Butao active={ativo === 5} onClick={() => setAtivo(5)}>
-                    <Textobutao active={ativo === 5}>
+
+            <DivButaoPagina onClick={() => navigate("/odontologia/financeiro")}>
+                <IconButton>
+                    <FaChartBar size={35} />
+                </IconButton>
+                <Butao active={rota === "/odontologia/financeiro"}>
+                    <Textobutao active={rota === "/odontologia/financeiro"}>
                         {props.text5}
                     </Textobutao>
                 </Butao>
             </DivButaoPagina>
-            <DivButaoPagina>
-                <IconButton src={props.imagem6}/> 
-                <Butao active={ativo === 6} onClick={() => setAtivo(6)}>
-                    <Textobutao active={ativo === 6}>
+
+            <DivButaoPagina onClick={() => navigate("/odontologia/configuracoes")}>
+                <IconButton>
+                    <FaCog size={35} />
+                </IconButton>
+                <Butao active={rota === "/odontologia/configuracoes"}>
+                    <Textobutao active={rota === "/odontologia/configuracoes"}>
                         {props.text6}
                     </Textobutao>
                 </Butao>
             </DivButaoPagina>
+
         </DivConteinerMenuLateral>
     );
 }
