@@ -8,7 +8,6 @@ interface FotoPerfilProps {
 export default function FotoPerfil({ editando }: FotoPerfilProps) {
 
     const [imagem, setImagem] = useState<string | null>(null);
-    const [arquivo, setArquivo] = useState<File | null>(null);
 
     useEffect(() => {
         const imgSalva = localStorage.getItem("foto_perfil");
@@ -16,7 +15,7 @@ export default function FotoPerfil({ editando }: FotoPerfilProps) {
     }, []);
 
     const handleSelecionarImagem = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (!editando) return; // impede edição sem modo edição ligado
+        if (!editando) return;
 
         const file = e.target.files?.[0];
         if (!file) return;
@@ -25,8 +24,6 @@ export default function FotoPerfil({ editando }: FotoPerfilProps) {
             alert("A imagem deve ter no máximo 5MB.");
             return;
         }
-
-        setArquivo(file);
 
         const reader = new FileReader();
         reader.onload = () => setImagem(reader.result as string);
@@ -49,7 +46,6 @@ export default function FotoPerfil({ editando }: FotoPerfilProps) {
         if (!editando) return;
 
         setImagem(null);
-        setArquivo(null);
         localStorage.removeItem("foto_perfil");
     };
 

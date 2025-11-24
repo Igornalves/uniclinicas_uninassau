@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 import { 
@@ -16,16 +16,12 @@ import img3 from '../../assets/images/Imagem_do_WhatsApp_de_2025-08-18_à_s__10.
 export default function SelecaoDeClinicasComponent() {
 
     const navigate = useNavigate();
-    const location = useLocation();
+    // const location = useLocation();
 
     const [selecionado, setSelecionado] = useState<number | null>(null);
 
-    const rota = location.pathname; // segue mesmo padrão do MenuLateral
-
     function handleClick(id: number) {
         setSelecionado(id);
-
-        // mesma estrutura que você usa no menu
         navigate("/odontologia/tela-inicio");
     }
 
@@ -35,7 +31,6 @@ export default function SelecaoDeClinicasComponent() {
 
             <DivConteinerSecundaria>
 
-                {/* Clínica 1 */}
                 <ButaoDeSelecao 
                     ativo={selecionado === 1}
                     onClick={() => handleClick(1)}
@@ -43,7 +38,6 @@ export default function SelecaoDeClinicasComponent() {
                     <Imagem src={img1} />
                 </ButaoDeSelecao>
 
-                {/* Clínica 2 */}
                 <ButaoDeSelecao 
                     ativo={selecionado === 2}
                     onClick={() => handleClick(2)}
@@ -51,7 +45,6 @@ export default function SelecaoDeClinicasComponent() {
                     <Imagem src={img2} />
                 </ButaoDeSelecao>
 
-                {/* Clínica 3 */}
                 <ButaoDeSelecao 
                     ativo={selecionado === 3}
                     onClick={() => handleClick(3)}
