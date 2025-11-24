@@ -16,17 +16,17 @@ export default function Router(){
     return (
         <Routes>
             <Route path="/" element={<Home url="https://igornalves.github.io/LadingPage_Projeto-Uniclinicas/"/>}/>
-            <Route path="/login" Component={Login}/>
-            <Route path="/cadastro" Component={Cadastro}/>
-            <Route path="/esqueceu-senha" Component={EsqueceuSenha}/>
-            <Route path="/recuperacao-de-senha" Component={RecuperacaoDeSenha}/>
-            <Route path="/selecao-clinica" Component={SelecaoDeClinicas}/>
-            <Route path="/odontologia/tela-inicio" Component={InicioOdontologia}/>
-            <Route path="/odontologia/paciente" Component={Paciente}/>
-            <Route path="/odontologia/relatorios" Component={Relatorios}/>
-            <Route path="/odontologia/agenda" Component={Agenda}/>
-            <Route path="/odontologia/financeiro" Component={Financeiro}/>
-            <Route path="/odontologia/configuracoes" Component={Configuracoes}/>
+            <Route path="/login" element={<Login />} />
+            <Route path="/cadastro" element={<Cadastro />} />
+            <Route path="/esqueceu-senha" element={<EsqueceuSenha />} />
+            <Route path="/recuperacao-de-senha" element={<RecuperacaoDeSenha />} />
+            <Route path="/selecao-clinica" element={<SelecaoDeClinicas />} />
+            <Route path="/odontologia/tela-inicio" element={<InicioOdontologia />} />
+            <Route path="/odontologia/paciente" element={<Paciente />} />
+            <Route path="/odontologia/relatorios" element={<Relatorios />} />
+            <Route path="/odontologia/agenda" element={<Agenda />} />
+            <Route path="/odontologia/financeiro" element={<Financeiro />} />
+            <Route path="/odontologia/configuracoes" element={<Configuracoes />} />
         </Routes>
     )
 }
