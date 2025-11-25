@@ -9,7 +9,6 @@ import {
     TagCarac, 
     Botao 
 } from "./style";
-import { useNavigate } from "react-router-dom";
 
 interface Props {
     nome: string;
