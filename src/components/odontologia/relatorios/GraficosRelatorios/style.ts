@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContainerGraficos = styled.div`
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-bottom: 25px;
 `;
 
@@ -14,6 +14,7 @@ export const CardGrafico = styled.div`
     padding-right: 40px;
     padding-left: 0px;
     border-radius: 10px;
+    margin-right: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;

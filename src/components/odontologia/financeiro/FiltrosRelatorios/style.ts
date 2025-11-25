@@ -1,11 +1,11 @@
 import styled from "styled-components";
 
 export const ContainerFiltros = styled.div`
-    width: 100%;
+    width: 97%;
     display: flex;
     justify-content: flex-start;
     margin-top: 25px;
-    margin-left: 25px;
+    margin-left: 0px;
     margin-bottom: 25px;
 `;
 
@@ -67,7 +67,7 @@ export const BotaoExportar = styled.button`
     align-items: center;
     justify-content: center;
     
-    margin-left: 148px;
+    margin-left: 130px;
 
     .iconeArquivo {
         margin-right: 10px;

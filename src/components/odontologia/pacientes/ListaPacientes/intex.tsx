@@ -14,8 +14,16 @@ import {
 } from "./style";
 
 import { dadosPacientes } from "./dados";
+import { useNavigate } from "react-router-dom";
 
 export default function ListaPacientes() {
+
+    const navigate = useNavigate();
+    
+    function irParaVisualizacao() {
+        navigate("/odontologia/visualizacao-paciente");
+    }
+    
     return (
         <ContainerPage>
             <Lista>
@@ -52,7 +60,7 @@ export default function ListaPacientes() {
                             <p>Telefone: {item.telefone}</p>
                         </DonoArea>
 
-                        <BotaoVisualizar>
+                        <BotaoVisualizar onClick={irParaVisualizacao}>
                             👁 Visualizar
                         </BotaoVisualizar>
 

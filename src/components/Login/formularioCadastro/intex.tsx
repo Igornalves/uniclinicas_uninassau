@@ -1,6 +1,26 @@
-import { DivConteiner, IconesSuperiores, IconesInferiores, TextLine, DivInterna, Input, LabelInput, Button, DivIcones, DivGeral, Background } from "./style";
+import { 
+    DivConteiner, 
+    IconesSuperiores, 
+    IconesInferiores, 
+    TextLine, 
+    DivInterna, 
+    Input, 
+    LabelInput, 
+    Button, 
+    DivIcones, 
+    DivGeral, 
+    Background 
+} from "./style";
+import { useNavigate } from "react-router-dom";
 
 export default function FormularioCadastroComponente(){
+
+    const navigate = useNavigate();
+
+    function criarConta() {
+        navigate("/login");
+    }
+
     return(
         <DivGeral>
             <DivConteiner>
@@ -16,7 +36,7 @@ export default function FormularioCadastroComponente(){
                     <LabelInput htmlFor="email">Digite o seu email</LabelInput>
                     <Input type="email" id="email" placeholder="Email"/>
 
-                    <LabelInput htmlFor="telefone">Digite seu número de telefone</  LabelInput>
+                    <LabelInput htmlFor="telefone">Digite seu número de telefone</LabelInput>
                     <Input type="tel" id="telefone" placeholder="Telefone"/>
 
                     <LabelInput htmlFor="cpf">Informe o seu CPF</LabelInput>
@@ -28,7 +48,7 @@ export default function FormularioCadastroComponente(){
                     <LabelInput htmlFor="confirmarSenha">Confirme sua senha</LabelInput>
                     <Input type="password" id="confirmarSenha" placeholder="Confirmar senha"/>
 
-                    <Button>Criar Conta</Button>
+                    <Button onClick={criarConta}>Criar Conta</Button>
 
                     <TextLine textoAlternativo>
                         OU CONTINUAR COM
@@ -36,13 +56,16 @@ export default function FormularioCadastroComponente(){
 
                     <DivIcones>
                         <IconesInferiores src="/assets/Icon-Google.png" alt="Icone google"/>
-                        <IconesInferiores src="/assets/Icon-Facebook.png" alt="Icone   facebook"/>
+                        <IconesInferiores src="/assets/Icon-Facebook.png" alt="Icone facebook"/>
                         <IconesInferiores src="/assets/Icon-Email.png" alt="Icone email"/>
                     </DivIcones>
 
                 </DivInterna>
             </DivConteiner>
-            <Background src="/public/assets/equipe-de-jovens-medicos-especialistas-em-pe-no-corredor-hospital.jpg" alt="Background"/>
+            <Background 
+                src="/public/assets/equipe-de-jovens-medicos-especialistas-em-pe-no-corredor-hospital.jpg" 
+                alt="Background"
+            />
         </DivGeral>
     )
 }

@@ -13,9 +13,9 @@ export const DivConteinerPrincipal = styled.div`
 export const ConteudoRolavel = styled.div`
     grid-column: 2; /* coluna da direita */
     grid-row: 2;    /* segunda linha */
-    height: calc(100vh - clamp(60px, 12vh, 120px));
+    height: calc(100vh - clamp(30px, 10h, 9px));
     overflow-y: auto;
-    padding-right: 25px;
+    /* padding-right: 25px; */
 
     &::-webkit-scrollbar {
         display: none;

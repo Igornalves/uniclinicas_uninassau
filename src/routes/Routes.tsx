@@ -11,6 +11,9 @@ import Relatorios from "../components/odontologia/relatorios/intex";
 import Agenda from "../components/odontologia/agenda/intex";
 import Financeiro from "../components/odontologia/financeiro/intex";
 import Configuracoes from "../components/odontologia/configuracoes/intex";
+import NovaFichaDePaciente from "../components/odontologia/NovaFichaDePaciente/intex";
+import HistoricoDePaciente from "../components/odontologia/HistoricoDePaciente/intex";
+import VisualizacaoDeDadosPaciente from "../components/odontologia/VisualizacaoDeDadosPaciente/intex";
 
 export default function Router(){
     return (
@@ -27,6 +30,9 @@ export default function Router(){
             <Route path="/odontologia/agenda" element={<Agenda />} />
             <Route path="/odontologia/financeiro" element={<Financeiro />} />
             <Route path="/odontologia/configuracoes" element={<Configuracoes />} />
+            <Route path="/odontologia/nova-ficha" element={<NovaFichaDePaciente />} />
+            <Route path="/odontologia/historico-paciente" element={<HistoricoDePaciente />} />
+            <Route path="/odontologia/visualizacao-paciente" element={<VisualizacaoDeDadosPaciente/>} />
         </Routes>
     )
 }

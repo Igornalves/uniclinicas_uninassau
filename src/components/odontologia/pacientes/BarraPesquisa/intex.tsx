@@ -7,8 +7,20 @@ import {
     ButtonGroup, 
     Button 
 } from "./style";
+import { useNavigate } from "react-router-dom";
 
 export default function BarraPesquisa() {
+
+    const navigate = useNavigate();
+
+    function irParaNovaFicha() {
+        navigate("/odontologia/nova-ficha");
+    }
+
+    function irParaHistorico() {
+        navigate("/odontologia/historico-paciente");
+    }
+
     return (
         <Container>
             <Title>Lista de Pacientes</Title>
@@ -19,8 +31,8 @@ export default function BarraPesquisa() {
             </SearchBox>
 
             <ButtonGroup>
-                <Button>+ Nova Ficha</Button>
-                <Button>Histórico</Button>
+                <Button onClick={irParaNovaFicha}>+ Nova Ficha</Button>
+                <Button onClick={irParaHistorico}>Histórico</Button>
             </ButtonGroup>
         </Container>
     );

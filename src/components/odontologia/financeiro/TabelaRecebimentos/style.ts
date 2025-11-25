@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
 export const ContainerTabela = styled.div`
-    width: 100%;
+    width: 96%;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
     margin-top: 25px;
     margin-bottom: 32px;
-    margin-left: 25px;
+    margin-left: 10px;
 `;
 
 export const TituloTabela = styled.h3`
